@@ -1,0 +1,4 @@
+Quickstart UI IdentityServer4
+1 - dotnet new mvc
+2 - dotnet new -i identityserver4.templates
+3 - dotnet new is4admin --force
