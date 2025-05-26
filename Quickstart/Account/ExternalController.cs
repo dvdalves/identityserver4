@@ -8,15 +8,17 @@ using IdentityModel;
 using IdentityServer4.Events;
 using IdentityServer4.Services;
 using IdentityServer4.Stores;
-using CursoIS4.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using IS4.Models;
+using IS4.Quickstart;
+using IdentityServer4;
 
-namespace IdentityServer4.Quickstart.UI
+namespace IS4.Quickstart.Account
 {
     [SecurityHeaders]
     [AllowAnonymous]
@@ -184,7 +186,7 @@ namespace IdentityServer4.Quickstart.UI
                 }
 
                 await HttpContext.SignInAsync(
-                    IdentityServer4.IdentityServerConstants.ExternalCookieAuthenticationScheme,
+                    IdentityServerConstants.ExternalCookieAuthenticationScheme,
                     new ClaimsPrincipal(id),
                     props);
                 return Redirect(props.RedirectUri);

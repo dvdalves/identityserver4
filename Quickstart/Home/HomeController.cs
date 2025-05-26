@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 
-namespace IdentityServer4.Quickstart.UI
+namespace IS4.Quickstart.Home
 {
     [SecurityHeaders]
     [AllowAnonymous]

@@ -6,8 +6,6 @@ using IdentityExpress.Identity;
 using IdentityExpress.Manager.Api;
 using IdentityServer4;
 using IdentityServer4.Configuration;
-using CursoIS4.Data;
-using CursoIS4.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -16,8 +14,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
+using IS4.Data.Users;
+using IS4.Models;
 
-namespace CursoIS4
+namespace IS4
 {
     public class Startup
     {

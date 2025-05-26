@@ -9,7 +9,7 @@ using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using System;
 
-namespace CursoIS4
+namespace IS4
 {
     public class Program
     {

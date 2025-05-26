@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using CursoIS4.Models;
+using IS4.Models;
 
-namespace CursoIS4.Data
+namespace IS4.Data.Users
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
